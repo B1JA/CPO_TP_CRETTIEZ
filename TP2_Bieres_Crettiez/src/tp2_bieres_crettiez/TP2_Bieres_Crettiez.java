@@ -20,5 +20,16 @@ public class TP2_Bieres_Crettiez {
         
         BouteilleBiere type2Biere = new BouteilleBiere ("Leffe", 6.6, "Abbaye de Leffe");
         type2Biere.lireEtiquette();
+        
+        BouteilleBiere type3Biere = new BouteilleBiere ("Bud", 5.5, "Réconfort");
+        type3Biere.lireEtiquette();
+        
+        BouteilleBiere type4Biere = new BouteilleBiere ("Kro", 3.6, "Dégout");
+        type4Biere.lireEtiquette();
+        
+        BouteilleBiere type5Biere = new BouteilleBiere ("Despe", 2.4, "Tequila");
+        type5Biere.lireEtiquette();
+        
+        
     }
 }

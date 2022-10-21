@@ -10,9 +10,11 @@ package tp2_bieres_crettiez;
  */
 public class BouteilleBiere {
     String Nom ;
-    float degreAlcool;
+    double degreAlcool;
     String brasserie ;
     boolean ouverte ; 
+    
+    
     
 
 public void lireEtiquette() {
@@ -21,5 +23,16 @@ System.out.println("Bouteille de " + Nom +" (" + degreAlcool +
  
 }
 
+public BouteilleBiere(String unNom, double unDegre, String 
+uneBrasserie) {
+ Nom = unNom;
+ degreAlcool = unDegre;
+ brasserie = uneBrasserie;
+ ouverte = false;
+}
+
+public Decapsuler (boolean false) {
+ouverture = false;
     
+}
 }
