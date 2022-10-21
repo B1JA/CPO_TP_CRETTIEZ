@@ -15,16 +15,10 @@ public class TP2_Bieres_Crettiez {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        BouteilleBiere uneBiere = new BouteilleBiere() ;
-        uneBiere.Nom = "Cuvée des trolls";
-        uneBiere.degreAlcool = 7.0 ;
-        uneBiere.brasserie = "Dubuisson";
-        uneBiere.ouverte = false;
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée de trolls", 7.0, "Dubuisson") ;
         uneBiere.lireEtiquette();
         
-        BouteilleBiere type2Biere = new BouteilleBiere ();
-        type2Biere.Nom = "Leffe";
-        type2Biere.degreAlcool = 6.6;
-        type2Biere.brasserie = "Abbaye de Leffe";
+        BouteilleBiere type2Biere = new BouteilleBiere ("Leffe", 6.6, "Abbaye de Leffe");
+        type2Biere.lireEtiquette();
     }
 }
