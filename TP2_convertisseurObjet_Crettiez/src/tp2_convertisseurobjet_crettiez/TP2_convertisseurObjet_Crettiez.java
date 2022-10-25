@@ -18,10 +18,13 @@ public class TP2_convertisseurObjet_Crettiez {
         
         Convertisseur masse = new Convertisseur ();
         System.out.println(masse);
-        
+      
+Scanner sc;
+sc = new Scanner(System.in);
     double ti = 5;
     double r;
-        
+    System.out.println("Que voulez vous faire? \n1) Celsius to Kelvin \n2) Celsius to Farenheit \n3) Kelvin to Celsius \n4) Kelvin to Farenheit \n5) Farenheit to Celsius \n6) Farenheit to Kelvin");
+    ent Ti = sc.nextInt();
     Convertisseur temp = new Convertisseur ();
     
     
