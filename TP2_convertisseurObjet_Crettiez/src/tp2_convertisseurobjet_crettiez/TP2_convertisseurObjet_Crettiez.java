@@ -31,7 +31,7 @@ public class TP2_convertisseurObjet_Crettiez {
         System.out.println("Que voulez vous faire? \n1) Celsius to Kelvin \n2) Celsius to Farenheit \n3) Kelvin to Celsius \n4) Kelvin to Farenheit \n5) Farenheit to Celsius \n6) Farenheit to Kelvin");
         int choix = sc.nextInt();
 
-        if (choix == 1) {
+        if (choix == 1){
             r = temp.CelsiusversKelvin(Ti);
             System.out.println(temp);
             System.out.println(r);
