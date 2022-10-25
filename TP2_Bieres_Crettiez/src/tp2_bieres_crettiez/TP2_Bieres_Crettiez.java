@@ -30,6 +30,19 @@ public class TP2_Bieres_Crettiez {
         BouteilleBiere type5Biere = new BouteilleBiere ("Despe", 2.4, "Tequila");
         type5Biere.lireEtiquette();
         
+        uneBiere.Decapsuler();
+        System.out.println(uneBiere);
         
+        type2Biere.Decapsuler();
+        System.out.println(type2Biere);
+        
+        type3Biere.Decapsuler();
+        System.out.println(type3Biere);
+        
+        type4Biere.Decapsuler();
+        System.out.println(type4Biere);
+        
+        type5Biere.Decapsuler();
+        System.out.println(type5Biere);
     }
 }
