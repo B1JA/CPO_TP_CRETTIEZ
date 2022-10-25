@@ -20,30 +20,34 @@ public class TP2_convertisseurObjet_Crettiez {
         System.out.println(masse);
         
     double ti = 5;
+    double r;
         
-    Convertisseur temp1 = new Convertisseur ();
-    temp1.CelsiusversKelvin(ti);
-    System.out.println(temp1);
+    Convertisseur temp = new Convertisseur ();
+    
+    
+r = temp.CelsiusversKelvin(ti);
+    System.out.println(temp);
+    System.out.println(r);
          
-    Convertisseur temp2 = new Convertisseur ();
-    temp2.CelsiusversFarenheit(ti);
-    System.out.println(temp2);
     
-    Convertisseur temp3 = new Convertisseur ();
-    temp3.KelvinversCelsius(ti);
-    System.out.println(temp3);
+r = temp.CelsiusversFarenheit(ti);
+    System.out.println(temp);
+    System.out.println(r);
     
-    Convertisseur temp4 = new Convertisseur ();
-    temp4.KelvinversFarenheit(ti);
-    System.out.println(temp4);
+r = temp.KelvinversCelsius(ti);
+    System.out.println(temp);
+    System.out.println(r);
     
-    Convertisseur temp5 = new Convertisseur ();
-    temp5.FarenheitversCelsius(ti);
-    System.out.println(temp5);
+r = temp.KelvinversFarenheit(ti);
+    System.out.println(temp);
+    System.out.println(r);
     
-    Convertisseur temp6 = new Convertisseur ();
-    temp6.FarenheitversKelvin(ti);
-    System.out.println(temp6);
-   
+r = temp.FarenheitversCelsius(ti);
+    System.out.println(temp);
+    System.out.println(r);
+    
+r = temp.FarenheitversKelvin(ti);
+   System.out.println(temp);
+   System.out.println(r);
 }
 }
