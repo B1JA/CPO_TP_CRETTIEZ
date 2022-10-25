@@ -19,16 +19,31 @@ public class TP2_convertisseurObjet_Crettiez {
         Convertisseur masse = new Convertisseur ();
         System.out.println(masse);
         
-    }
+    double ti = 5;
+        
+    Convertisseur temp1 = new Convertisseur ();
+    temp1.CelsiusversKelvin(ti);
+    System.out.println(temp1);
+         
+    Convertisseur temp2 = new Convertisseur ();
+    temp2.CelsiusversFarenheit(ti);
+    System.out.println(temp2);
     
-    double temp;
-    temp=0;
-    double ind;
-    ind=0;
-    Scanner sc;
-    sc = new Scanner(System.in);
-    System.out.println("Bonjour, saisissez une valeur :");
-    temp= sc.nextDouble();
-    System.out.println("Saisissez la conversion que vous souhaitez effectuer: \n1) De Kelvin vers Celsius 
+    Convertisseur temp3 = new Convertisseur ();
+    temp3.KelvinversCelsius(ti);
+    System.out.println(temp3);
     
+    Convertisseur temp4 = new Convertisseur ();
+    temp4.KelvinversFarenheit(ti);
+    System.out.println(temp4);
+    
+    Convertisseur temp5 = new Convertisseur ();
+    temp5.FarenheitversCelsius(ti);
+    System.out.println(temp5);
+    
+    Convertisseur temp6 = new Convertisseur ();
+    temp6.FarenheitversKelvin(ti);
+    System.out.println(temp6);
+   
+}
 }
