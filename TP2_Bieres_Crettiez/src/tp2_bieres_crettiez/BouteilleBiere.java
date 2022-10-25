@@ -31,8 +31,27 @@ uneBrasserie) {
  ouverte = false;
 }
 
-public Decapsuler (boolean false) {
-ouverture = false;
+public boolean Decapsuler () {
+    if (ouverte == false) {
+        ouverte = true;
+        System.out.println("Bière ouverte");
+        return true;
+    } else {
+        System.out.println ("Erreur : La bière est déjà ouverte");
+        return false ;     
+    }
+}
+public class uneBiere {
     
 }
+
+@Override
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = Nom + " (" + degreAlcool + " degrés) Ouverte ? "; 
+if (ouverte == true ) chaine_a_retourner += "oui" ;
+else chaine_a_retourner += "non" ;
+return chaine_a_retourner ;
+}
+
 }
