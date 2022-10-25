@@ -34,6 +34,7 @@ public class TP2_manip_Crettiez {
         //Moussaka assiette666 = assiette1;
         //Moussaka assaiette667 = new Tartiflette ();
         //Une référence objet qui annonce référencer un type d'objet ne peut pas référencer un autre qui n'a aucun rapport
+        
     }
 }
     
