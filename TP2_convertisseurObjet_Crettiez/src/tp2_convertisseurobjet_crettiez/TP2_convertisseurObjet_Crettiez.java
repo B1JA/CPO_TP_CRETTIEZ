@@ -4,6 +4,8 @@
  */
 package tp2_convertisseurobjet_crettiez;
 
+import java.util.Scanner;
+
 /**
  *
  * @author benja
@@ -21,36 +23,48 @@ public class TP2_convertisseurObjet_Crettiez {
       
 Scanner sc;
 sc = new Scanner(System.in);
-    double ti = 5;
+
     double r;
-    System.out.println("Que voulez vous faire? \n1) Celsius to Kelvin \n2) Celsius to Farenheit \n3) Kelvin to Celsius \n4) Kelvin to Farenheit \n5) Farenheit to Celsius \n6) Farenheit to Kelvin");
-    ent Ti = sc.nextInt();
     Convertisseur temp = new Convertisseur ();
+    System.out.println("Quelle est la température initiale?");
+    int Ti = sc.nextInt();
+    System.out.println("Que voulez vous faire? \n1) Celsius to Kelvin \n2) Celsius to Farenheit \n3) Kelvin to Celsius \n4) Kelvin to Farenheit \n5) Farenheit to Celsius \n6) Farenheit to Kelvin");
+    int choix = sc.nextInt();
     
-    
-r = temp.CelsiusversKelvin(ti);
+    if (choix == 1) {   
+r = temp.CelsiusversKelvin(Ti);
     System.out.println(temp);
     System.out.println(r);
-         
-    
-r = temp.CelsiusversFarenheit(ti);
+    } else {
+        if (choix == 2) {
+r = temp.CelsiusversFarenheit(Ti);
     System.out.println(temp);
     System.out.println(r);
-    
-r = temp.KelvinversCelsius(ti);
+        } else {
+            if (choix == 3) {
+r = temp.KelvinversCelsius(Ti);
     System.out.println(temp);
     System.out.println(r);
-    
-r = temp.KelvinversFarenheit(ti);
+            } else {
+                if (choix == 4) {
+r = temp.KelvinversFarenheit(Ti);
     System.out.println(temp);
     System.out.println(r);
-    
-r = temp.FarenheitversCelsius(ti);
+                } else {
+                    if (choix == 5) {
+r = temp.FarenheitversCelsius(Ti);
     System.out.println(temp);
     System.out.println(r);
-    
-r = temp.FarenheitversKelvin(ti);
+                    } else {
+                        if (choix == 6) {
+r = temp.FarenheitversKelvin(Ti);
    System.out.println(temp);
    System.out.println(r);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 }
