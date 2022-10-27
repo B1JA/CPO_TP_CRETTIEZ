@@ -21,8 +21,8 @@ public class Personne {
     liste_voitures = new Voiture [3];   
 }
     
- public boolean ajouter_voiture (Voiture voiture_a_ajouter) {   
-    if (voiture_a_ajouter.Proprietaire != null){
+ public boolean ajouter_voiture (Voiture ajout_dune_voiture) {   
+    if (ajout_dune_voiture.Proprietaire != null){
     System.out.println("Voiture volée");
     return false;
  } else if (nbVoitures >= 3) {
@@ -31,7 +31,8 @@ public class Personne {
          } else {
          int Tableau = nbVoitures;
          nbVoitures += 1;
-         voiture_a_ajouter.Proprietaire = this;
+         ajout_dune_voiture.Proprietaire = this;
+         this.liste_voitures[Tableau] = ajout_dune_voiture;
          return true;
          }
  }

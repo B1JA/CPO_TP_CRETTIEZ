@@ -23,26 +23,32 @@ public class TP2_relation_1_Crettiez {
     Personne reno = new Personne("Reno", "Raines");
     System.out.println("liste des voitures disponibles: \n"+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
     //Le programme s'execute et affiche sans erreurs
-    } 
-    
+   
     bob.liste_voitures [0] = uneClio;
     bob.nbVoitures = 1;
     uneClio.Proprietaire = bob;
-    System.out.println ("Premiere voiture de Bob :" +bob.liste_voitures[0]);
+    System.out.println ("la premiere voiture de Bob est " +bob.liste_voitures[0]);
     
+    une2008.Proprietaire = bob;
+    bob.nbVoitures += 1;
+    bob.liste_voitures [1] = une2008;
+    System.out.println("La deuxième voiture de Bob est "+bob.liste_voitures[1]);
+            
     
     uneMicra.Proprietaire = reno;
-    reno.nbVoitures = 1;
+    uneClio.Proprietaire = reno;
+    reno.nbVoitures = 2;
     reno.liste_voitures[0] = uneMicra;
+    reno.liste_voitures[1] = uneClio;
+    System.out.println(reno.ajouter_voiture(uneMicra));
+    System.out.println(reno.ajouter_voiture(uneClio));
     
     
-    uneAutreClio.Proprietaire = reno;
+    une2008.Proprietaire = reno;
     reno.nbVoitures += 1;
-    reno.liste_voitures [reno.nbVoitures - 1] = uneAutreClio;
+    reno.liste_voitures [reno.nbVoitures - 1] = une2008;
     
     
-    System.out.println(bob.ajouter_voiture(une2008));
-    System.out.println(bob.ajouter_voiture(uneAutreClio));
-    
+    System.out.println(reno.ajouter_voiture(uneMicra));
+    }
 }
-
