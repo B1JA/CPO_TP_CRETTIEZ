@@ -8,24 +8,23 @@ package tp3_heritage_crettiez;
  *
  * @author benja
  */
-public class Baton extends Arme {
-    int Age;
+public class Epée extends Arme {
+    int Finesse;
     
-    public Baton(String nom, int niv, int old) {
+    public Epée (String nom, int niv, int fine) {
         super(nom, niv);
-        if (old >= 100) {
-            Age = 99;
-        } else if (old > 0) {
-            Age = old;
+        if (fine >= 100) {
+            Finesse = 99;
+        } else if (fine > 0) {
+            Finesse = fine;
         } else {
-            Age = 0;
+            Finesse = 0;
         }
     }
 
     @Override
     public String toString() {
-        return "Baton{" + "Age=" + Age + '}';
+        return "Ep\u00e9e{" + "Finesse=" + Finesse + '}';
     }
     
 }
-
