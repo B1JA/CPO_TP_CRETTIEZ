@@ -15,6 +15,10 @@ public class TP3_heritage_Crettiez {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Epée Exc = new Epée ("Excalibur", 7, 5);
+        Epée Dur = new Epée ("Durandal", 4, 7);
+        Baton Che = new Baton ("Chêne", 4, 5);
+        Baton Cha = new Baton ("Charme", 5, 6);
     }
     
 }
