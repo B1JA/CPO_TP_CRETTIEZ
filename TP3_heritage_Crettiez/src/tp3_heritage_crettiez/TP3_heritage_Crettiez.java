@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp3_heritage_crettiez;
+import java.util.*;
 
 /**
  *
@@ -19,6 +20,13 @@ public class TP3_heritage_Crettiez {
         Epée Dur = new Epée ("Durandal", 4, 7);
         Baton Che = new Baton ("Chêne", 4, 5);
         Baton Cha = new Baton ("Charme", 5, 6);
+        
+    ArrayList<Arme> Tab = new ArrayList();
+    Tab.add(Exc);
+    Tab.add(Dur);
+    Tab.add(Che);
+    Tab.add(Cha);
     }
+    
     
 }
