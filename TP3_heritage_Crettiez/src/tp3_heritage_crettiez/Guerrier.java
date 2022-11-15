@@ -10,6 +10,10 @@ package tp3_heritage_crettiez;
  */
 public class Guerrier extends Personnage {
     boolean Horse;
+
+    public void setHorse(boolean Horse) {
+        this.Horse = Horse;
+    }
     
     public Guerrier(String n, int vie, boolean a) {
         super(n, vie);

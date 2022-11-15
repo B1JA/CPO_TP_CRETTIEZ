@@ -10,6 +10,10 @@ package tp3_heritage_crettiez;
  */
 public class Magicien extends Personnage {
     boolean Conf;
+
+    public void setConf(boolean Conf) {
+        this.Conf = Conf;
+    }
     
     public Magicien (String n, int vie, boolean a) {
         super(n,vie);
