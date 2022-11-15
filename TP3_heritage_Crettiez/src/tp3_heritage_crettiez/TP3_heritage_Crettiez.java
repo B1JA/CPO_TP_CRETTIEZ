@@ -35,6 +35,10 @@ public class TP3_heritage_Crettiez {
         System.out.println(Tab.get(i));
     }
     
+    Magicien Gand = new Magicien ("Gandalf le blanc", 65, true);
+    Magicien Garc = new Magicien ("Garcimore", 44, false);
+    Guerrier Cona = new Guerrier ("Conan", 78, false);
+    Guerrier Lann = new Guerrier ("Lannister", 45, true);
     }
     
     
