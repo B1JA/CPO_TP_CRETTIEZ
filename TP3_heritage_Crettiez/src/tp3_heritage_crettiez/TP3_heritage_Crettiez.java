@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp3_heritage_crettiez;
+import Armes.Epée;
+import Armes.Baton;
+import Armes.Arme;
 import java.util.*;
 
 /**
@@ -26,6 +29,12 @@ public class TP3_heritage_Crettiez {
     Tab.add(Dur);
     Tab.add(Che);
     Tab.add(Cha);
+    
+    int taille = Tab.size();
+    for (int i = 0; i < taille; i++) {
+        System.out.println(Tab.get(i));
+    }
+    
     }
     
     

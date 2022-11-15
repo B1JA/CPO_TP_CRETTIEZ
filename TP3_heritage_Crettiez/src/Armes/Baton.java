@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heritage_crettiez;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -20,11 +22,6 @@ public class Baton extends Arme {
         } else {
             Age = 0;
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Baton{" + "Age=" + Age + '}';
     }
     
 }
